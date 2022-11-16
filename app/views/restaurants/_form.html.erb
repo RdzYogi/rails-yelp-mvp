@@ -1,0 +1,12 @@
+<%= simple_form_for [@restaurant] do |f| %>
+  <div class="d-flex flex-column">
+    <%= f.label :name %>
+    <%= f.text_field :name, class:"mb-3"%>
+    <%= f.label :address %>
+    <%= f.text_field :address, class:"mb-3" %>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number, class:"mb-3" %>
+    <% text = @restaurant.id.nil? ? 'Create' : 'Update' %>
+    <%= f.submit "#{text} Restaurant", class:"w-25"%>
+  </div>
+<% end %>

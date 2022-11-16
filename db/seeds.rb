@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Restaurant.destroy_all
+r = { name: 'Mcdonalds', address: 'Madrid', phone_number: '123', category: 'belgian' }
+Restaurant.create(r)
+r = { name: 'Kfc', address: 'Madrid', phone_number: '123', category: 'italian' }
+Restaurant.create(r)
+r = { name: 'Burger King', address: 'Madrid', phone_number: '123', category: 'chinese' }
+Restaurant.create(r)
+r = { name: 'Ginos', address: 'Madrid', phone_number: '123', category: 'italian' }
+Restaurant.create(r)
+r = { name: 'Neraida', address: 'Madrid', phone_number: '123', category: 'japanese' }
+Restaurant.create(r)

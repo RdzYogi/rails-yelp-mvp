@@ -1,0 +1,12 @@
+<%= render partial: 'restaurants/nav' %>
+
+<div class="d-flex flex-column m-auto w-50">
+  <% @restaurants.each do |restaurant| %>
+    <div class="mb-3">
+      <h2><%= link_to restaurant.name, restaurant_path(restaurant), class: "text-decoration-none", style: "color: #337ab7;" %></h2>
+      <p><%= restaurant.address %></p>
+      <p><%= restaurant.category %></p>
+      <p><%= restaurant.phone_number %></p>
+    </div>
+  <% end %>
+</div>

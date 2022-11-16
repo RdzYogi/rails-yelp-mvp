@@ -1,0 +1,10 @@
+<h4>Post a new review</h4>
+<%= simple_form_for [@restaurant, @review] , data: {turbo_method: :submit} do |f| %>
+  <div class="d-flex flex-column mb-3 border-bottom pb-3">
+    <%= f.label :content %>
+    <%= f.text_field :content, class:"mb-3"%>
+    <%= f.label :rating %>
+    <%= f.number_field :rating, class:"mb-3" %>
+    <%= f.submit "New review", class:"w-25"%>
+  </div>
+<% end %>

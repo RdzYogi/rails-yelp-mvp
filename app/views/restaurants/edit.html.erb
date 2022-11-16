@@ -1,0 +1,6 @@
+<%= render partial: 'restaurants/nav' %>
+<div class="d-flex flex-column m-auto w-50">
+  <h1>Editing restaurant</h1>
+  <%= render partial: 'restaurants/form' %>
+  <p><%= link_to "Show", restaurant_path(@restaurant)%> | <%= link_to "Back", restaurants_path%></p>
+</div>
